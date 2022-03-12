@@ -16,3 +16,27 @@ Train a ConvNet on the CheXpert dataset:
 Extract CNN features using a previously computed model checkpoint:
 
 > python feature_extraction.py --device 2 --exp_name vgg11bn_ones_adam_1e4_64 --arch vgg11_bn --mode train --checkpoint /gpu-data2/jpik/CheXpert/checkpoints/vgg11bn_ones_adam_1e4_64/0218_102921/model_best.pth --strategy U-Ones
+
+### Citation
+
+If you use CheXpert for your research, consider citing the original paper:
+
+```
+@inproceedings{irvin2019chexpert,
+  title={{CheXpert}: A large chest radiograph dataset with uncertainty labels and expert comparison},
+  author={Irvin, Jeremy and Rajpurkar, Pranav and Ko, Michael and Yu, Yifan and Ciurea-Ilcus, Silviana and Chute, Chris and Marklund, Henrik and Haghgoo, Behzad and Ball, Robyn and Shpanskaya, Katie and others},
+  booktitle={Proc. AAAI Conf. on Artificial Intelligence},
+  volume={},
+  number={},
+  pages={},
+  year={2019}
+}
+```
+
+### Acknowlegements
+
+* [https://github.com/victoresque/pytorch-template](https://github.com/victoresque/pytorch-template)
+
+### Contact
+
+For questions feel free to open an issue.
