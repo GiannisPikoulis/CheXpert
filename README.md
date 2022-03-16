@@ -15,7 +15,7 @@ Train a ConvNet on the CheXpert dataset:
 
 Extract CNN features using a previously computed model checkpoint:
 
-> python feature_extraction.py --device 2 --exp_name vgg11bn_ones_adam_1e4_64 --arch vgg11_bn --mode train --checkpoint /gpu-data2/jpik/CheXpert/checkpoints/vgg11bn_ones_adam_1e4_64/0218_102921/model_best.pth --strategy U-Ones
+> python feature_extraction.py --device 2 --exp_name vgg11bn_ones_adam_1e4_64 --arch vgg11_bn --mode train --checkpoint [CHECKPOINT_PATH] --strategy U-Ones
 
 ### Citation
 
