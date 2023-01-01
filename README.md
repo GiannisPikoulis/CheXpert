@@ -9,13 +9,17 @@
 
 Train a ConvNet on the CheXpert dataset:
 
-> python train.py --config main_config.json --arch resnet18 --device 0 --pretrained_imagenet --strategy U-Ones --exp_name resnet18_ones_adam_1e4 --lr 0.0001 --optimizer Adam --batch_size 16
+```
+python train.py --config main_config.json --arch resnet18 --device 0 --pretrained_imagenet --strategy U-Ones --exp_name resnet18_ones_adam_1e4 --lr 0.0001 --optimizer Adam --batch_size 16
+```
 
 ### Feature extraction:
 
 Extract CNN features using a previously computed model checkpoint:
 
-> python feature_extraction.py --device 2 --exp_name vgg11bn_ones_adam_1e4_64 --arch vgg11_bn --mode train --checkpoint [CHECKPOINT_PATH] --strategy U-Ones
+```
+python feature_extraction.py --device 2 --exp_name vgg11bn_ones_adam_1e4_64 --arch vgg11_bn --mode train --checkpoint [CHECKPOINT_PATH] --strategy U-Ones
+```
 
 ### Citation
 
